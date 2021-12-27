@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Welcome from './Welcome';
+import Clock from './Clock';
 import Comment from './Comment';
+import Toggle from './Toggle';
 
 class App extends Component {
     render() {
@@ -16,13 +17,20 @@ class App extends Component {
 
         return <div>
             <h1>React App</h1>
-            {/* <Welcome name={greeting} /> */}
-            <Comment
+            <div>
+                <Clock />
+                <Toggle />
+            </div>
+
+
+
+            {/* <Comment
                 date={comment.date}
                 text={comment.text}
-                author={comment.author} />
+                author={comment.author} /> */}
         </div>;
     }
 }
+
 
 export default App;
