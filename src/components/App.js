@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import Clock from './Clock';
 import Comment from './Comment';
+import LoginControl from './LoginControl'
+import Page from './Page'
+
+
 import Toggle from './Toggle';
 
 class App extends Component {
@@ -18,8 +22,11 @@ class App extends Component {
         return <div>
             <h1>React App</h1>
             <div>
-                <Clock />
-                <Toggle />
+
+                {/* <Clock /> */}
+                {/* <Toggle /> */}
+                {/* <LoginControl /> */}
+                <Page />
             </div>
 
 
