@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Clock from './Clock';
 import Comment from './Comment';
 import LoginControl from './LoginControl'
-import Page from './Page'
+import Blog from './Blog'
 
 
 import Toggle from './Toggle';
@@ -21,6 +21,10 @@ class App extends Component {
             },
         };
         const numbers = [1, 2, 3, 4]
+        const posts = [
+            { id: 1, title: 'React', content: 'Learning react' },
+            { id: 2, title: 'Certification', content: 'Getting certified' },
+        ]
 
         return <div>
             <h1>React App</h1>
@@ -30,7 +34,8 @@ class App extends Component {
                 {/* <Toggle /> */}
                 {/* <LoginControl /> */}
                 {/* <Page /> */}
-                <NumberList numbers={numbers} />
+                {/* <NumberList numbers={numbers} /> */}
+                <Blog posts={posts} />
             </div>
 
 
