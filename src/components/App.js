@@ -8,6 +8,8 @@ import Page from './Page'
 import Toggle from './Toggle';
 
 class App extends Component {
+
+
     render() {
         const greeting = 'Sterling';
         const comment = {
@@ -18,6 +20,7 @@ class App extends Component {
                 avatarUrl: 'https://placekitten.com/g/64/64',
             },
         };
+        const numbers = [1, 2, 3, 4]
 
         return <div>
             <h1>React App</h1>
@@ -26,7 +29,8 @@ class App extends Component {
                 {/* <Clock /> */}
                 {/* <Toggle /> */}
                 {/* <LoginControl /> */}
-                <Page />
+                {/* <Page /> */}
+                <NumberList numbers={numbers} />
             </div>
 
 
@@ -38,6 +42,15 @@ class App extends Component {
         </div>;
     }
 }
+
+function NumberList(props) {
+    const numbers = props.numbers
+    const listItems = numbers.map((number) => <li key={number.toString()}>{number}</li>)
+    return (
+        <ul>{listItems}</ul>
+    )
+}
+
 
 
 export default App;

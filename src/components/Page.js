@@ -16,6 +16,7 @@ class Page extends Component {
     }
 
     render() {
+
         return (
             <div>
                 <WarningBanner warn={this.state.showWarning} />
