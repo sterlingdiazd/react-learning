@@ -3,6 +3,7 @@ import Clock from './Clock';
 import Comment from './Comment';
 import LoginControl from './LoginControl'
 import Blog from './Blog'
+import NameForm from './NameForm'
 
 
 import Toggle from './Toggle';
@@ -35,7 +36,8 @@ class App extends Component {
                 {/* <LoginControl /> */}
                 {/* <Page /> */}
                 {/* <NumberList numbers={numbers} /> */}
-                <Blog posts={posts} />
+                {/* <Blog posts={posts} /> */}
+                <NameForm />
             </div>
 
 
