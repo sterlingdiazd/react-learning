@@ -4,6 +4,8 @@ import Comment from './Comment';
 import LoginControl from './LoginControl'
 import Blog from './Blog'
 import NameForm from './NameForm'
+import EasyForm from './EasyForm'
+import Reservation from './Reservation'
 
 
 import Toggle from './Toggle';
@@ -37,7 +39,9 @@ class App extends Component {
                 {/* <Page /> */}
                 {/* <NumberList numbers={numbers} /> */}
                 {/* <Blog posts={posts} /> */}
-                <NameForm />
+                {/* <NameForm /> */}
+                {/* <EasyForm /> */}
+                <Reservation />
             </div>
 
 
