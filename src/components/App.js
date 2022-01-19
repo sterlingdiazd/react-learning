@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import Clock from './Clock';
+import Toggle from './Toggle';
 import Comment from './Comment';
 import LoginControl from './LoginControl'
 import Blog from './Blog'
 import NameForm from './NameForm'
 import EasyForm from './EasyForm'
 import Reservation from './Reservation'
+import Calculator from './Calculator/Calculator';
 
-
-import Toggle from './Toggle';
 
 class App extends Component {
 
 
+
     render() {
+
+
         const greeting = 'Sterling';
         const comment = {
             date: new Date(),
@@ -41,7 +44,8 @@ class App extends Component {
                 {/* <Blog posts={posts} /> */}
                 {/* <NameForm /> */}
                 {/* <EasyForm /> */}
-                <Reservation />
+                {/* <Reservation /> */}
+                <Calculator />
             </div>
 
 
