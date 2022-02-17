@@ -34,7 +34,6 @@ class LoginControl extends Component {
                 </div>
 
                 <Greeting isLoggedIn={isLoggedIn} />
-
                 <MailBox unreadMessages={messages} />
             </div>
 
@@ -44,8 +43,6 @@ class LoginControl extends Component {
 
 
 }
-
-
 
 function LoginButton(props) {
     return (

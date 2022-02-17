@@ -1,13 +1,8 @@
-button {
-  height: 40px;
-  width: 200px;
+.Dialog-title {
+  margin: 0;
+  font-family: sans-serif;
 }
-.warning {
-  background-color: red;
-  text-align: center;
-  width: 100%;
-  padding: 10px;
 
-  font-size: 14pt;
-  color: white;
+.Dialog-message {
+  font-size: larger;
 }

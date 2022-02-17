@@ -8,14 +8,12 @@ import NameForm from './NameForm'
 import EasyForm from './EasyForm'
 import Reservation from './Reservation'
 import Calculator from './Calculator/Calculator';
-
+import WelcomeDialog from './Composition/WelcomeDialog';
+import Page from './Page';
 
 class App extends Component {
 
-
-
     render() {
-
 
         const greeting = 'Sterling';
         const comment = {
@@ -39,14 +37,15 @@ class App extends Component {
                 {/* <Clock /> */}
                 {/* <Toggle /> */}
                 {/* <LoginControl /> */}
-                {/* <Page /> */}
+                <Page />
                 {/* <NumberList numbers={numbers} /> */}
                 {/* <Blog posts={posts} /> */}
                 {/* <NameForm /> */}
                 {/* <EasyForm /> */}
                 {/* <Reservation /> */}
-                <Calculator />
+                {<WelcomeDialog />}
             </div>
+
 
 
 
