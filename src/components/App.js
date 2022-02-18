@@ -10,6 +10,9 @@ import Reservation from './Reservation'
 import Calculator from './Calculator/Calculator';
 import WelcomeDialog from './Composition/WelcomeDialog';
 import Page from './Page';
+import SplitPane from './Composition/SplitPane/SplitPane';
+import SignUpDialog from './Composition/SignUpDialog/SignUpDialog';
+
 
 class App extends Component {
 
@@ -34,16 +37,18 @@ class App extends Component {
             <h1>React App</h1>
             <div>
 
-                {/* <Clock /> */}
+
                 {/* <Toggle /> */}
                 {/* <LoginControl /> */}
-                <Page />
+                {/* <Page /> */}
                 {/* <NumberList numbers={numbers} /> */}
                 {/* <Blog posts={posts} /> */}
                 {/* <NameForm /> */}
                 {/* <EasyForm /> */}
-                {/* <Reservation /> */}
-                {<WelcomeDialog />}
+
+                {/* {<WelcomeDialog />} */}
+                {<SignUpDialog />}
+                {/* {<SplitPane left={<Reservation />} right={<Clock />} />} */}
             </div>
 
 
