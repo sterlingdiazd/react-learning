@@ -12,6 +12,7 @@ import WelcomeDialog from './Composition/WelcomeDialog';
 import Page from './Page';
 import SplitPane from './Composition/SplitPane/SplitPane';
 import SignUpDialog from './Composition/SignUpDialog/SignUpDialog';
+import FilterableProductTable from './Products/FilterableProductTable/FilterableProductTable';
 
 
 class App extends Component {
@@ -32,12 +33,18 @@ class App extends Component {
             { id: 1, title: 'React', content: 'Learning react' },
             { id: 2, title: 'Certification', content: 'Getting certified' },
         ]
+        const PRODUCTS = [
+            { category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football' },
+            { category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball' },
+            { category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball' },
+            { category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch' },
+            { category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5' },
+            { category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7' }
+        ];
 
         return <div>
             <h1>React App</h1>
             <div>
-
-
                 {/* <Toggle /> */}
                 {/* <LoginControl /> */}
                 {/* <Page /> */}
@@ -45,10 +52,12 @@ class App extends Component {
                 {/* <Blog posts={posts} /> */}
                 {/* <NameForm /> */}
                 {/* <EasyForm /> */}
-
                 {/* {<WelcomeDialog />} */}
-                {<SignUpDialog />}
+                {/* {<SignUpDialog />} */}
                 {/* {<SplitPane left={<Reservation />} right={<Clock />} />} */}
+
+                {<FilterableProductTable products={PRODUCTS} />}
+
             </div>
 
 
