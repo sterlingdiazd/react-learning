@@ -13,6 +13,7 @@ import Page from './Page';
 import SplitPane from './Composition/SplitPane/SplitPane';
 import SignUpDialog from './Composition/SignUpDialog/SignUpDialog';
 import FilterableProductTable from './Products/FilterableProductTable/FilterableProductTable';
+import TestReact from './TestReact/TestReact';
 
 
 class App extends Component {
@@ -56,7 +57,8 @@ class App extends Component {
                 {/* {<SignUpDialog />} */}
                 {/* {<SplitPane left={<Reservation />} right={<Clock />} />} */}
 
-                {<FilterableProductTable products={PRODUCTS} />}
+                {/* {<FilterableProductTable products={PRODUCTS} />} */}
+                {<TestReact />}
 
             </div>
 
