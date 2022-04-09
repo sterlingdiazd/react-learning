@@ -1,34 +1,30 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import Greeting from './Greeting';
 
 class Toggle extends Component {
-    constructor(props) {
-        super(props)
-        this.state = { isToggleOn: true }
+	constructor(props) {
+		super(props);
+		this.state = { isToggleOn: true };
 
-        this.handleClick = this.handleClick.bind(this)
-    }
+		this.handleClick = this.handleClick.bind(this);
+	}
 
-<<<<<<< HEAD
-=======
-    handleClick() {
-        this.setState(prevState => ({
-            isToggleOn: !prevState.isToggleOn
-        }))
-    }
->>>>>>> f541377bd690c227ec019ff35904fba0a86cbe96
+	handleClick() {
+		this.setState((prevState) => ({
+			isToggleOn: !prevState.isToggleOn
+		}));
+	}
 
-    render() {
-        return (
-            <div>
-                <Greeting isLoggedIn={this.state.isToggleOn} />
-                <button onClick={this.handleClick}>
-                    {this.state.isToggleOn ? 'On' : 'Off'}
-                </button>
-            </div>
-
-        )
-    }
+	render() {
+		return (
+			<div>
+				<Greeting isLoggedIn={this.state.isToggleOn} />
+				<button onClick={this.handleClick}>
+					{this.state.isToggleOn ? 'On' : 'Off'}
+				</button>
+			</div>
+		);
+	}
 }
 
 export default Toggle;
