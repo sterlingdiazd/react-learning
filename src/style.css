@@ -1,0 +1,47 @@
+:global body {
+  margin: 0;
+  padding: 0;
+
+}
+
+:global .FancyBorder {
+  padding: 10px 10px;
+  border: 10px solid;
+}
+
+:global .FancyBorder-blue {
+  border-color: blue;
+}
+
+:global .Dialog-title {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+:global .Dialog-message {
+  font-size: larger;
+}
+
+:global .SplitPane {
+  width: 100%;
+  height: 100%;
+}
+
+:global .SplitPane-left {
+  float: left;
+  
+  width: 30%;
+  height: 100%;
+    background: lightblue;
+}
+
+:global .SplitPane-right {
+  float: left;
+  width: 70%;
+  height: 100%;
+    background: pink;
+}
+
+:global .inputWidth {
+  width: 100%;
+}
